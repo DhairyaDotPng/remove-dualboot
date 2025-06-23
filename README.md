@@ -20,9 +20,11 @@ Just deleting the linux partition is not enough to completely remove linux from 
 7. Assign an unused letter to the volume via: `assign LETTER=Z:`
 8. Exit diskpart via: `exit`
 9. Go to EFI volume via: `Z:`
-10. Go to linux folder for eg: `cd fedora`
-11. Make sure it contains grub.cfg file via: `dir`
-12. Go back one folder via: `cd ..`
-13. Delete the linux folder via: `rmdir /s fedora`
-14. Type in `y` for confirmation
-15. Reboot
+10. Go to EFI folder under EFI volume via `cd efi`
+11. Make sure it contains the linux distro folder via: `dir`
+12. Go to linux distro folder for eg: `cd fedora`
+13. Make sure it contains grub.cfg file via: `dir`
+14. Go back one folder via: `cd ..`
+15. Delete the linux folder via: `rmdir /s fedora`
+16. Type in `y` for confirmation
+17. Reboot
